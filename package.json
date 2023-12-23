@@ -25,7 +25,7 @@
     "eslint": "eslint src/ --fix",
     "eslint-check": "eslint src/",
     "publint": "publint",
-    "publish": "npm publish",
+    "publish": "npm publish --access=public",
     "publish-dryrun": "npm publish --dry-run"
   },
   "repository": {
