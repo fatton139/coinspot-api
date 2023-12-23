@@ -1,0 +1,67 @@
+{
+  "name": "@fatton139/coinspot-api",
+  "version": "0.0.0",
+  "description": "TypeScript + Node wrapper around the REST API for https://www.coinspot.com.au/v2/api.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.cts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup src/v2/index.ts --format esm,cjs --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "prettier": "prettier . --write",
+    "prettier-check": "prettier . --check",
+    "eslint": "eslint src/ --fix",
+    "eslint-check": "eslint src/",
+    "publint": "publint",
+    "publish": "npm publish",
+    "publish-dryrun": "npm publish --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatton139/coinspot-api.git"
+  },
+  "keywords": [
+    "coinspot",
+    "cryptocurrency",
+    "crypto",
+    "API",
+    "wrapper",
+    "client",
+    "typescript",
+    "node"
+  ],
+  "author": "fatton139",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fatton139/coinspot-api/issues"
+  },
+  "homepage": "https://github.com/fatton139/coinspot-api#readme",
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "publint": "^0.2.7",
+    "tsup": "^8.0.1",
+    "typescript": "^5.2.2",
+    "vitest": "^1.1.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "url-join": "^5.0.0"
+  }
+}
