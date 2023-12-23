@@ -3,15 +3,21 @@
 TypeScript + Node wrapper around the CoinSpot REST API https://www.coinspot.com.au/v2/api.
 
 ## Installation
+
 NPM
+
 ```
 npm install @fatton139/coinspot-api
 ```
+
 PNPM
+
 ```
 pnpm install @fatton139/coinspot-api
 ```
+
 Yarn
+
 ```
 yarn add @fatton139/coinspot-api
 ```
