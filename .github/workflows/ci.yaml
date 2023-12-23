@@ -15,9 +15,10 @@ jobs:
       - run: npm ci
       - run: npm run prettier-check
       - run: npm run eslint-check
-      - run: npm run publint
       - run: npm run typecheck
       - run: npm run test
+      - run: npm build
+      - run: npm run publint
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
