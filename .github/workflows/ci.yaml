@@ -17,7 +17,7 @@ jobs:
       - run: npm run eslint-check
       - run: npm run typecheck
       - run: npm run test
-      - run: npm build
+      - run: npm run build
       - run: npm run publint
       - run: npm publish
         env:
