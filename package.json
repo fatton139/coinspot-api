@@ -1,6 +1,6 @@
 {
   "name": "@fatton139/coinspot-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "TypeScript + Node wrapper around the REST API for https://www.coinspot.com.au/v2/api.",
   "type": "module",
   "main": "./dist/index.js",
